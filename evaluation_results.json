@@ -1,0 +1,40 @@
+{
+    "spark_master": "local[*]",
+    "spark_version": "4.2.0",
+    "hyperparameters": {
+        "reg_param": 0.01,
+        "elastic_net": 0.0,
+        "max_iter": 100,
+        "test_size": 0.2,
+        "seed": 42
+    },
+    "metrics": {
+        "accuracy": 0.7967,
+        "f1_score": 0.6667,
+        "precision": 0.7812,
+        "recall": 0.5814,
+        "specificity": 0.9125,
+        "roc_auc": 0.864
+    },
+    "confusion_matrix": {
+        "tp": 25,
+        "tn": 73,
+        "fp": 7,
+        "fn": 18,
+        "matrix": [
+            [
+                73,
+                7
+            ],
+            [
+                18,
+                25
+            ]
+        ]
+    },
+    "timing": {
+        "fit_time_sec": 2.033,
+        "eval_time_sec": 2.479,
+        "total_time_sec": 11.12
+    }
+}
